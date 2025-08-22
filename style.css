@@ -565,60 +565,9 @@ footer {
 
 /* Responsivo */
 /* -----------------------------
-   Notebooks grandes / telas grandes
+   Notebooks / Laptops
 ----------------------------- */
-@media (min-width: 1200px) {
-    .hero-title {
-        font-size: 3.5rem;
-    }
-
-    .section-title {
-        font-size: 2.5rem;
-    }
-
-    .about-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 60px;
-    }
-
-    .projects-container {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
-    }
-
-    .hero-buttons {
-        flex-direction: row;
-        gap: 20px;
-    }
-}
-
-/* -----------------------------
-   Laptops / notebooks médios
------------------------------ */
-@media (max-width: 1199px) and (min-width: 993px) {
-    .hero-title {
-        font-size: 3rem;
-    }
-
-    .section-title {
-        font-size: 2.3rem;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-    }
-
-    .projects-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 35px;
-    }
-}
-
-/* -----------------------------
-   Tablets grandes
------------------------------ */
-@media (max-width: 992px) and (min-width: 769px) {
+@media (max-width: 992px) {
     .hero-title {
         font-size: 2.8rem;
     }
@@ -636,113 +585,55 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 20px;
+    }
 }
 
 /* -----------------------------
-   Tablets pequenos
+   Celulares / Smartphones
 ----------------------------- */
-@media (max-width: 768px) and (min-width: 577px) {
-    .hero::before {
-        display: none;
-    }
-
-    .hero-content {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-
+@media (max-width: 576px) {
     .hero-title {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: center;
     }
 
     .hero-buttons {
         flex-direction: column;
-        gap: 15px;
-    }
-
-    .projects-container {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .nav-links {
-        display: none; /* menu mobile aparece */
-    }
-}
-
-/* -----------------------------
-   Celulares comuns
------------------------------ */
-@media (max-width: 576px) and (min-width: 481px) {
-    .hero-title {
-        font-size: 1.9rem;
-        text-align: center;
-    }
-
-    .section-title {
-        font-size: 1.7rem;
-    }
-
-    .hero-buttons button {
-        width: 100%;
-        font-size: 0.95rem;
-        padding: 12px;
-    }
-
-    .about-content {
-        gap: 25px;
-        padding: 0 15px;
-    }
-
-    .projects-container {
-        gap: 20px;
-    }
-
-    footer {
-        font-size: 0.9rem;
-        text-align: center;
-        padding: 12px;
-    }
-}
-
-/* -----------------------------
-   Celulares pequenos / compactos
------------------------------ */
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 1.5rem;
-    }
-
-    .section-title {
-        font-size: 1.4rem;
-    }
-
-    .hero-buttons {
         gap: 10px;
     }
 
     .hero-buttons button {
+        width: 100%;
         font-size: 0.9rem;
         padding: 10px;
     }
 
     .about-content {
-        gap: 20px;
+        gap: 25px;
         padding: 0 10px;
     }
 
     .projects-container {
-        gap: 15px;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     footer {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+        text-align: center;
         padding: 10px;
+    }
+
+    .nav-links {
+        display: none; /* menu mobile aparece */
     }
 }
